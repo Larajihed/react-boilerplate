@@ -1,3 +1,4 @@
-// .dockerignore
 node_modules
-build
+npm-debug.log
+Dockerfile
+.dockerignore
