@@ -1,13 +1,12 @@
 version: "3.8"
 
 services:
-  app:
-    container_name: app-dev
-    image: app-dev
-    build:
-      context: .
-      target: development
+  reactapp:
+    container_name: sts_c
+    build: ./sts
     volumes:
-      - ./src:/app/src
+      - ./sts:/app
     ports:
-      - 3000:3001
+      - 3000:3000
+    stdin_open: true
+    tty: true
